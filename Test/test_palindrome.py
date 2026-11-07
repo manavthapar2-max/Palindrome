@@ -17,3 +17,6 @@ def test_two_same_characters():
 
 def test_not_palindrome():
     assert is_palindrome("abc") is False
+
+def test_laval_palindrome():
+    assert is_palindrome("laval") is True
