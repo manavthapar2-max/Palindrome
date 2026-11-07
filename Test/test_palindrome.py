@@ -20,3 +20,6 @@ def test_not_palindrome():
 
 def test_laval_palindrome():
     assert is_palindrome("laval") is True
+
+def test_toronto_not_palindrome():
+    assert is_palindrome("toronto") is False
