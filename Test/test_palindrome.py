@@ -8,3 +8,6 @@ def test_invalid_input():
 
 def test_empty_string():
     assert is_palindrome("") is False
+
+def test_single_character():
+    assert is_palindrome("a") is True
