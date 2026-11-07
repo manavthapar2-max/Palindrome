@@ -14,3 +14,6 @@ def test_single_character():
 
 def test_two_same_characters():
     assert is_palindrome("bb") is True
+
+def test_not_palindrome():
+    assert is_palindrome("abc") is False
