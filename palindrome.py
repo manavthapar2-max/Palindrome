@@ -8,7 +8,9 @@ def is_palindrome(value):
     if not value:
         return False
 
-    characters = deque(value)
+    cleaned = "".join(char.lower() for char in value if char.isalnum())
+
+    characters = deque(cleaned)
 
     while len(characters) > 1:
         if characters.popleft() != characters.pop():
